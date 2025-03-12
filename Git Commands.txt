@@ -1,0 +1,37 @@
+Instrucciones Richita
+
+Usar Bash, PowerShell genera errores con Git por alguna razón que me da flojera investigar.
+
+Cambiar a la carpeta del repositorio:
+      cd "C:\Users\Cristian\Desktop\Programacion\Soon Delivery 
+      App\Pantalla-Principal"
+
+Eliminar el archivo git (Opcional en caso de fallas)
+      rd /s /q .git
+
+Activar repositorio:
+      git init 
+
+Conectarse al Repositorio Remoto:
+      git remote add origin https://github.com/brayanibp/soon_drivers.git
+
+Seleccionar la Branch a la que se va a subir:
+      git branch -M main
+
+Subir cambios (Seleccionar Bien Las carpetas que se van a 
+enviar):
+      git add .
+      git add (rutas de las carpetas y archivos)
+
+Crear el commit (historial de cambios) para poder subir al repositorio:
+      git commit -m "Primer Commit y test de Git"
+
+                  En caso de haber conflictos la IA me sugirió:
+                        git pull origin main --allow-unrelated-histories
+
+Subir cambios:
+       git push -u origin main
+
+Si los errores no se quieren resolver, pero estás seguro de
+lo que estás haciendo, entonces:
+      git push -f origin main
